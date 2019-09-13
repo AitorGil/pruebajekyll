@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/jekyll-doc-theme/css/main.css">
+    <link rel="stylesheet" href="/jekyll-doc-theme/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/jekyll-doc-theme/favicon.ico?1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Sincronización externa con Google Calendar | Jekyll Doc Theme</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Sincronización externa con Google Calendar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Pasos previos a seguir para establecer correctamente la sincronización entre Bookker y Google Calendar." />
+<meta property="og:description" content="Pasos previos a seguir para establecer correctamente la sincronización entre Bookker y Google Calendar." />
+<link rel="canonical" href="http://localhost:4000/jekyll-doc-theme/docs/sincronizacion-google-calendar/" />
+<meta property="og:url" content="http://localhost:4000/jekyll-doc-theme/docs/sincronizacion-google-calendar/" />
+<meta property="og:site_name" content="Jekyll Doc Theme" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-13T11:44:35+02:00" />
+<script type="application/ld+json">
+{"description":"Pasos previos a seguir para establecer correctamente la sincronización entre Bookker y Google Calendar.","@type":"WebPage","url":"http://localhost:4000/jekyll-doc-theme/docs/sincronizacion-google-calendar/","headline":"Sincronización externa con Google Calendar","dateModified":"2019-09-13T11:44:35+02:00","datePublished":"2019-09-13T11:44:35+02:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="canonical" href="http://localhost:4000/jekyll-doc-theme/docs/sincronizacion-google-calendar/">
+    <link rel="alternate" type="application/rss+xml" title="Jekyll Doc Theme" href="http://localhost:4000/jekyll-doc-theme/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="/jekyll-doc-theme/">
+                <span><img src="/jekyll-doc-theme/img/logonav.png" alt="Logo"></span> Jekyll Doc Theme
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/jekyll-doc-theme/docs/home/">Docs</a></li>
+                <li ><a href="/jekyll-doc-theme/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li>
+            </ul>
+            <div class="navbar-right">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="search" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/aksakalli/jekyll-doc-theme"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+            Getting Started
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-1" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/home/">Welcome</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+            Autenticación
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-2" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/autenticacion-autorizacion/">Módulo de autenticación y autorización</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+            Usuarios
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-3" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/actualizar-perfil-de-usuario/">Actualizar perfil de Usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-contactos-usuario/">Recuperar contactos del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/busqueda-empleado/">Módulo de búsqueda de empleado</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/perfil-usuario/">Perfil del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recursos-usuario/">Recuperar recursos del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/restablecer-contrasena/">Restablecer contraseña</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+            Reservas
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-4" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/asignar-reserva-supervisada/">Asignar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cambio-de-estado-de-asistencia/">Cambio de estado de asistencia</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-instancia-reserva-supervisada/">Cancelar instancia de una reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-reserva-supervisada/">Cancelar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-reserva/">Cancelar reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/check-in-reserva/">Check-In reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/check-out-reserva/">Check-Out reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/creacion-reserva-supervisada/">Creación de reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/creacion-reserva/">Creación de reservas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/edicion-reserva/">Edición de reservas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/edicion-reserva-supervisada/">Editar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-asistentes/">Lista de asistentes de una reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/razones-cancelacion/">Recuperar razones de cancelación</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-reservas-supervisadas/">Recuperar reservas supervisadas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/crear-reserva-supervisada/">Crear reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-reservas-usuario/">Recuperar reservas del usuario</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+            Recursos
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-5" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/disponibilidad-recursos/">Disponibilidad de los recursos</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+            Organizaciones
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-6" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/modulos-organizacion/">Recuperar módulos de la organización</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+            Sincronización Externa
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse" id="collapse-7" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item active" href="/jekyll-doc-theme/docs/sincronizacion-google-calendar/">Sincronización externa con Google Calendar</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/sincronizacion-microsoft-outlook/">Sincronización con Microsoft Outlook</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+            Notificaciones
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-8" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/dispositivos-del-usuario/">Dispositivos del usuario</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+            Otros
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-9" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/errores/">Códigos de error y causas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/codigos-error/">Lista de códigos de error</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/integracion-modulo-core/">Integración con el módulo del Core</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/modulo-de-log/">Módulo de Logging</a>
+          
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+        </div>
+
+        <div class="col-md-8">
+            <h1>Sincronización externa con Google Calendar</h1>
+            <div id="markdown-content-container"><h4 id="pasos-previos-a-seguir-para-establecer-correctamente-la-sincronización-entre-bookker-y-google-calendar">Pasos previos a seguir para establecer correctamente la sincronización entre Bookker y Google Calendar.</h4>
+
+<h5 id="1º-crear-un-proyecto-en-la-consola-de-desarrolladores-de-google"><u>1º Crear un proyecto en la consola de desarrolladores de Google</u></h5>
+
+<p>Lo primero de todo es dirigirse a la <a href="https://console.developers.google.com">consola de desarrolladores de Google</a> y crear un proyecto nuevo (si es que no hay creado uno ya, si este es el caso, podemos omitir este paso).</p>
+
+<p>En la parte superior izquierda de la pantalla debería aparecer <strong>Selecciona un proyecto</strong>, pulsamos y se abrirá un diálogo.</p>
+
+<p><img src="/home/aitor/Documentos/Imagenes Manual Google/crear proyecto.png" alt="crear proyecto" /></p>
+
+<p>Deberemos elegir la organización correcta y a continuación pulsaremos en <strong>Nuevo proyecto</strong>, esto nos llevará a otra pantalla donde tendremos que introducir diferentes datos.</p>
+
+<p><img src="/home/aitor/Documentos/Imagenes Manual Google/nuevo proyecto.png" alt="nuevo proyecto" /></p>
+
+<p>Lo primero es introducir el nombre del proyecto, a continuación si queremos modificar el ID podemos hacerlo, pero es opcional, en el campo de <strong>Organización</strong> aparecerá la que hemos elegido anteriormente y en ubicación deberemos elegir la correcta.</p>
+
+<p>Una vez introducidos la información necesaria pulsamos en crear.</p>
+
+<h5 id="2º-crear-una-cuenta-de-servicio-y-delegarle-autorización-sobre-el-dominio"><u>2º Crear una cuenta de servicio y delegarle autorización sobre el dominio.</u></h5>
+
+<p>Es necesario crear una cuenta de servicio ya que esto nos permitirá personificar a los usuarios y/o recursos y así realizar operaciones sin el consentimiento explícito de éstos.</p>
+
+<p>Para crear dicha cuenta hay que seguir los siguientes pasos:</p>
+
+<ul>
+  <li>
+    <p>Dirigirse a este <a href="https://console.developers.google.com/iam-admin/serviceaccounts">enlace</a>, (previamente hay que estar logeado como administrador y tener un proyecto creado) y pulsar en <img src="/home/aitor/Documentos/Imagenes Manual Google/crear_cuenta_servicio.png" alt="crear_cuenta_servicio" /></p>
+  </li>
+  <li>
+    <p>A continuación tendremos que introducir los datos que se nos soliciten, en este caso, el <strong>nombre</strong> de la cuenta de servicio, su <strong>ID</strong> y su <strong>descripción</strong>.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/crear cuenta de servicio.png" alt="" /></p>
+
+    <p>Procedemos a pulsar en crear y a continuación se nos dará la opción de otorgar diferentes permisos, esto es opcional y para el uso que se le va a dar a esta cuenta de servicio no es necesario (pulsar en <strong>Continuar</strong> y después en <strong>Listo</strong>.</p>
+  </li>
+  <li>
+    <p>Después se nos redirigirá al listado de cuentas de servicio donde aparecerá la que acabamos de crear, pulsamos en su nombre y nos mostrará sus detalles.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/habilitar delegación de dominio.png" alt="habilitar delegación de dominio" /></p>
+  </li>
+  <li>
+    <p>Lo que tenemos que hacer ahora es crear una clave y habilitar la delegación en todo el dominio de G Suite, para ello tendremos que pulsar donde dice <strong>Editar</strong>, y a continuación en <strong>Mostrar la delegación en todo el dominio</strong>, y marcamos la casilla.</p>
+
+    <p>Lo siguiente es pulsar donde dice crear clave. Se nos dará a elegir entre dos formatos de archivo, <strong>JSON</strong> o <strong>P12</strong>, es imprescindible escoger <strong>JSON</strong>, esto nos descargará un archivo que necesitaremos más adelante. <strong>(PENDIENTE EN MP: en el formulario de la plataforma de gestión tendría que haber un campo para subir el JSON o su contenido para luego insertarlo en la base de datos)</strong>.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/crear clave privada.png" alt="crear clave privada" /></p>
+
+    <p>Es <strong>MUY IMPORTANTE</strong> no perder este archivo, ya que Google no se hace cargo de lo que pase con éste.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/aviso clave privada.png" alt="aviso clave privada" /></p>
+  </li>
+  <li>
+    <p>Una vez pulsemos en guardar, debajo de la casilla que marcamos anteriormente para habilitar la delegación del dominio, habrá aparecido un campo nuevo, este es el <strong>ID de cliente</strong>, deberemos copiarlo ya que lo necesitaremos a continuación.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/id cliente.png" alt="id cliente" /></p>
+  </li>
+  <li>
+    <p>Para terminar tendremos que dar permisos a la cuenta de servicio sobre Google Calendar, para esto hay que irse a la consola de administración de G Suite y pulsar en <strong>Seguridad</strong>, si no aparece pulsamos en <strong>Mas controles</strong>, que se encuentra en la parte inferior.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/consola de administración.png" alt="consola de administración" /></p>
+  </li>
+  <li>
+    <p>Una vez dentro de este apartado, tendremos que buscar la opción de <strong>Configuración avanzada</strong>, que desplegará otra opcion llamada <strong>Autenticación</strong>.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/configuracion avanzada.png" alt="configuracion avanzada" /></p>
+  </li>
+  <li>
+    <p>Pulsamos en <strong>Administrar el acceso de cliente API</strong>, esto nos llevará al siguiente paso, que es otorgarle los permisos sobre Google Calendar a la cuenta de servicio.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/administrar acceso.png" alt="administrar acceso" /></p>
+  </li>
+  <li>
+    <p>En el campo de texto <strong>Nombre del cliente</strong>, tendremos que introducir el ID de cliente copiado anteriormente después de habilitar la delegación sobre el dominio. En el campo de texto <strong>Uno o más ámbitos API</strong>, tendremos que introducir <strong>exactamente lo siguiente</strong>:</p>
+
+    <ul>
+      <li>https://www.googleapis.com/auth/admin.directory.resource.calendar,https://www.googleapis.com/auth/calendar</li>
+    </ul>
+
+    <p>Una vez introducidos el ID de cliente y los ámbitos, pulsamos en autorizar:</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/ambitos api.png" alt="ambitos api" /></p>
+
+    <p>Justo debajo aparecerá el ID de cliente introducido, y a su derecha los ámbitos otorgados (se ha ocultado el ID de cliente por motivos de privacidad).</p>
+  </li>
+  <li>
+    <p>Una vez hecho esto, ya tenemos lista la cuenta de servicio.</p>
+  </li>
+</ul>
+
+<h5 id="3º-cuenta-de-administrador-para-que-la-cuenta-de-servicio-la-personifique"><u>3º Cuenta de administrador para que la cuenta de servicio la personifique.</u></h5>
+
+<p>Es necesario que se cree un usuario con ciertos permisos de administración para que la cuenta de servicio pueda personificarle, esto es necesario ya que Bookker realiza ciertas operaciones que en Google Calendar solo son posibles personificando a un usuario con dichos permisos.</p>
+
+<p>Para crear dicho usuario hay que realizar los siguientes pasos:</p>
+
+<ul>
+  <li>Primero tendremos que crear el usuario, para ello nos dirigimos a la consola de administración de G Suite, y pulsamos en la opción <strong>Usuarios</strong>.</li>
+  <li>
+    <p>A continuación seguimos los pasos que se nos indican y creamos un usuario.</p>
+  </li>
+  <li>
+    <p>Después volvemos a la consola de administración de G Suite, y buscamos la opción llamada <strong>Funciones de administrador</strong>, si no aparece, deberemos pulsar en <strong>Más controles</strong>.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/consola de administración.png" alt="consola de administración" /></p>
+  </li>
+  <li>
+    <p>A continuación deberemos pulsar en dicha opción, y se nos mostrará la siguiente pantalla</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/administracion.png" alt="administracion" /></p>
+  </li>
+  <li>Deberemos pulsar en <strong>Superadministrador</strong>, y a continuación se nos mostrará un diálogo donde deberemos introducir el nombre o correo del usuario que hemos creado anteriormente, de esta forma aparecerá como opción sugerida, aceptamos y el diálogo se cerrará. Antes de salir, es necesario pulsar en el botón guardar que aparecerá en la parte inferior derecha de la pantalla.</li>
+</ul>
+
+<h5 id="4º-añadir-y-verificar-el-dominio-donde-se-recibirán-las-notificaciones"><u>4º Añadir y verificar el dominio donde se recibirán las notificaciones</u></h5>
+
+<p>En caso de que la sincronización bidireccional esté contratada, el siguiente paso es añadir y verificar el dominio donde se recibirán las notificaciones, para que Bookker pueda gestionarlas.</p>
+
+<p>Los pasos a seguir son los siguientes:</p>
+
+<ul>
+  <li>
+    <p>Lo primero es ir a la <a href="https://search.google.com/u/1/search-console/welcome">consola de búsqueda</a> de Google, y logearse preferiblemente como administrador.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/search console.png" alt="search console" /></p>
+  </li>
+  <li>
+    <p>Imaginemos que nuestro dominio es <strong>http://www.bookkercorp.com/</strong> (ejemplo), a este dominio tendremos que añadirle siempre esto: <strong>api/v1/notifications/google/{idOrganización}/</strong>, siendo idOrganización el id de la organización registrada en Bookker para la que se está preparando la sincronización bidireccional. Un ejemplo del dominio completo sería:</p>
+
+    <ul>
+      <li>http://www.bookkercorp.com/api/v1/notifications/google/61ef94b4-5775-43fd-880f-f1850d089e28/</li>
+    </ul>
+
+    <p>Este dominio lo tendremos que pegar en el campo de la opción <strong>Prefijo de la URL</strong>, y pulsar en <strong>Continuar</strong>, se abrirá el siguiente diálogo:</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/verificar propiedadpng.png" alt="verificar propiedadpng" /></p>
+  </li>
+  <li>
+    <p>Antes de pulsar en verificar, deberemos descargar el archivo, y copiar su nombre al completo, incluida la extensión del mismo (.html), <strong>(PENDIENTE EN MP: en el formulario de la plataforma de gestión debería haber un campo para pegar el nombre del archivo, y despues insertar el registro necesario en la base de datos)</strong>. Una vez se haya guardado en la base de datos, pulsaremos en verificar, y si todo va bien, debería aparecer un mensaje de confirmación como este:</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/confirmacion de verificacion.png" alt="confirmacion de verificacion" /></p>
+  </li>
+  <li>
+    <p>Por último, tendremos que añadir el dominio desde la consola de desarrolladores de Google, para así autorizarlo, podemos acceder desde <a href="https://console.developers.google.com/apis/credentials/domainverification">aquí</a>, es importante asegurarse de que estamos usando la consola con el usuario y que estamos en el proyecto correcto.</p>
+
+    <p><img src="/home/aitor/Documentos/Imagenes Manual Google/verificacion dominio consola google.png" alt="verificacion dominio consola google" />Pulsamos en añadir un dominio e introducimos el mismo dominio usado en el paso anterior.</p>
+
+    <p>Hecho esto la sincronización bidireccional estará preparada.</p>
+  </li>
+</ul>
+</div>
+            <div style="clear:both;">
+              <p class="text-center">
+                <br />
+                <a target="_blank" href="https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages/_docs/Manual sincronización externa con Google Calendar.md" class="btn btn-default githubEditButton" role="button">
+                  <i class="fa fa-pencil fa-lg"></i> Improve this page
+                </a>
+              </p>
+            </div>
+            <hr>
+            
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/jekyll-doc-theme/docs/modulos-organizacion/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/jekyll-doc-theme/docs/sincronizacion-microsoft-outlook/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+      </ul>
+    <div class="clear"></div>
+    
+
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            Jekyll Doc Theme 2019 |
+            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = '/jekyll-doc-theme'
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/jekyll-doc-theme/js/bootstrap.min.js "></script>
+<script src="/jekyll-doc-theme/js/typeahead.bundle.min.js "></script>
+
+<script src="/jekyll-doc-theme/js/main.js "></script>
+
+</body>
+
+</html>

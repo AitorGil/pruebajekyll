@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/jekyll-doc-theme/css/main.css">
+    <link rel="stylesheet" href="/jekyll-doc-theme/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/jekyll-doc-theme/favicon.ico?1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Sincronización con Microsoft Outlook | Jekyll Doc Theme</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Sincronización con Microsoft Outlook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Bookker v2" />
+<meta property="og:description" content="Bookker v2" />
+<link rel="canonical" href="http://localhost:4000/jekyll-doc-theme/docs/sincronizacion-microsoft-outlook/" />
+<meta property="og:url" content="http://localhost:4000/jekyll-doc-theme/docs/sincronizacion-microsoft-outlook/" />
+<meta property="og:site_name" content="Jekyll Doc Theme" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-13T11:44:35+02:00" />
+<script type="application/ld+json">
+{"description":"Bookker v2","@type":"WebPage","url":"http://localhost:4000/jekyll-doc-theme/docs/sincronizacion-microsoft-outlook/","headline":"Sincronización con Microsoft Outlook","dateModified":"2019-09-13T11:44:35+02:00","datePublished":"2019-09-13T11:44:35+02:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="canonical" href="http://localhost:4000/jekyll-doc-theme/docs/sincronizacion-microsoft-outlook/">
+    <link rel="alternate" type="application/rss+xml" title="Jekyll Doc Theme" href="http://localhost:4000/jekyll-doc-theme/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="/jekyll-doc-theme/">
+                <span><img src="/jekyll-doc-theme/img/logonav.png" alt="Logo"></span> Jekyll Doc Theme
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/jekyll-doc-theme/docs/home/">Docs</a></li>
+                <li ><a href="/jekyll-doc-theme/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li>
+            </ul>
+            <div class="navbar-right">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="search" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/aksakalli/jekyll-doc-theme"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+            Getting Started
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-1" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/home/">Welcome</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+            Autenticación
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-2" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/autenticacion-autorizacion/">Módulo de autenticación y autorización</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+            Usuarios
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-3" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/actualizar-perfil-de-usuario/">Actualizar perfil de Usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-contactos-usuario/">Recuperar contactos del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/busqueda-empleado/">Módulo de búsqueda de empleado</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/perfil-usuario/">Perfil del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recursos-usuario/">Recuperar recursos del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/restablecer-contrasena/">Restablecer contraseña</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+            Reservas
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-4" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/asignar-reserva-supervisada/">Asignar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cambio-de-estado-de-asistencia/">Cambio de estado de asistencia</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-instancia-reserva-supervisada/">Cancelar instancia de una reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-reserva-supervisada/">Cancelar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-reserva/">Cancelar reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/check-in-reserva/">Check-In reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/check-out-reserva/">Check-Out reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/creacion-reserva-supervisada/">Creación de reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/creacion-reserva/">Creación de reservas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/edicion-reserva/">Edición de reservas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/edicion-reserva-supervisada/">Editar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-asistentes/">Lista de asistentes de una reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/razones-cancelacion/">Recuperar razones de cancelación</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-reservas-supervisadas/">Recuperar reservas supervisadas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/crear-reserva-supervisada/">Crear reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-reservas-usuario/">Recuperar reservas del usuario</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+            Recursos
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-5" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/disponibilidad-recursos/">Disponibilidad de los recursos</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+            Organizaciones
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-6" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/modulos-organizacion/">Recuperar módulos de la organización</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+            Sincronización Externa
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse" id="collapse-7" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/sincronizacion-google-calendar/">Sincronización externa con Google Calendar</a>
+          
+            
+            
+            <a class="list-group-item active" href="/jekyll-doc-theme/docs/sincronizacion-microsoft-outlook/">Sincronización con Microsoft Outlook</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+            Notificaciones
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-8" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/dispositivos-del-usuario/">Dispositivos del usuario</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+            Otros
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-9" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/errores/">Códigos de error y causas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/codigos-error/">Lista de códigos de error</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/integracion-modulo-core/">Integración con el módulo del Core</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/modulo-de-log/">Módulo de Logging</a>
+          
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+        </div>
+
+        <div class="col-md-8">
+            <h1>Sincronización con Microsoft Outlook</h1>
+            <div id="markdown-content-container"><h2 id="bookker-v2">Bookker v2</h2>
+
+<p>La sincronización con Outlook dispone de tres partes principalmente:</p>
+
+<ul>
+  <li>Notificación desde Bookker hasta Outlook de los cambios realizados por los usuarios. Todas las acciones se realizan en los calendarios de los usuarios.</li>
+  <li>Notificación desde Bookker hasta Outlook de los cambios realizados por el sistema de Bookker. Todas las acciones se realizan en los calendarios de los recursos.</li>
+  <li>Notificación desde Outlook hasta Bookker de los cambios realizados en los calendarios de los recursos.</li>
+</ul>
+
+<p>En base a estos canales de comunicación se monta un sistema de sincronización donde los usuarios de Bookker pueden ver reflejadas las reservas de espacios en sus calendarios de Outlook y viceversa.</p>
+
+<h3 id="sincronización-unidirecional">Sincronización unidirecional</h3>
+
+<p>Las reservas de espacios, realizadas en Bookker, se ven reflejadas en los calendarios de los usuarios en MS Outlook.</p>
+
+<p><strong>No es necesario</strong> que la empresa tenga <strong>correos de recurso</strong> (en Outlook) para los espacios.</p>
+
+<h4 id="flujo-de-creación-de-reserva">Flujo de creación de reserva:</h4>
+
+<p><img src="/home/aitorgc/Documentos/Bookker/Documentacion/Bookker-B2B-API/Images/Flujo Sincronización con Microsoft Graph.png" alt="Flujo sincronización Outlook" /></p>
+
+<ul>
+  <li>El usuario crea una reserva desde la aplicación móvil de Bookker. <strong>[BOOKKER]</strong></li>
+  <li>Bookker procesa la petición, comprobando las restricciones y el acceso del usuario, y realiza una petición a Outlook de creación de evento. <strong>[BOOKKER]</strong></li>
+  <li>Si la petición es correcta, y todo ha ido bien, Outlook contesta un 200 OK. <strong>[OUTLOOK]</strong></li>
+  <li>Al recibir el 200 OK, se guarda la reserva en la base de datos de Bookker y se devuelve un 201 Created a los usuarios. <strong>[BOOKKER]</strong></li>
+</ul>
+
+<h3 id="sincronización-bidireccional">Sincronización bidireccional</h3>
+
+<p>Las reservas de espacios, realizadas en Bookker, se ven reflejadas en los calendarios de los usuarios en MS Outlook y las reservas creadas desde las aplicaciones de MS Outlook son procesadas por Bookker y registradas en su sistema.</p>
+
+<p><strong>Es necesario</strong> que la empresa tenga <strong>correos de recurso</strong> (en Outlook) para los espacios.</p>
+
+<h4 id="flujo-de-creación-de-reserva-desde-bookker">Flujo de creación de reserva desde Bookker:</h4>
+
+<p><img src="/home/aitorgc/Documentos/Bookker/Documentacion/Bookker-B2B-API/Images/Flujo Sincronización con Microsoft Graph.png" alt="Flujo sincronización Outlook" /></p>
+
+<ol>
+  <li>El usuario crea una reserva desde la aplicación móvil de Bookker.</li>
+  <li>El API de Bookker valida la petición de reserva.
+    <ol>
+      <li>Comprueba que el usuario tenga acceso al espacio.</li>
+      <li>Comprueba las reglas del usuario.</li>
+      <li>Comprueba las reglas del espacio.</li>
+    </ol>
+  </li>
+  <li>Bookker realiza una petición de creación de evento en el calendario del espacio usando MS Graph REST API.</li>
+  <li>Si se consigue crear el evento, en el calendario del usuario, MS Graph responde <code class="highlighter-rouge">200 OK</code>.</li>
+  <li><strong>Bookker convierte el Evento</strong> de MS Outlook <strong>en</strong> un objeto <strong>Reserva</strong> de Bookker y lo almacena en la base de datos.</li>
+  <li>La base de datos notifica de que se ha almacenado correctamente la reserva.</li>
+  <li>Bookker responde a la petición de creación un <code class="highlighter-rouge">201 Created</code>.</li>
+</ol>
+
+<p>Por otra parte, MS Outlook procesará el evento creado en el calendario del usuario y lo propagará a el calendario del recurso y de los invitados. También se encargará de enviar notificaciones push a las suscripciones que, previamente, Bookker ha establecido a través de MS Graph.</p>
+
+<h4 id="flujo-de-proceso-de-las-notificaciones-push-de-ms-graph">Flujo de proceso de las notificaciones push de MS Graph</h4>
+
+<p>Bookker recibe tres tipos de notificaciones: Creación, actualización y eliminación de eventos en los calendarios de los recursos.</p>
+
+<h5 id="creación-de-evento">Creación de evento</h5>
+
+<ol>
+  <li>Se recupera el evento en el calendario del recurso en Outlook.</li>
+  <li>
+    <p>Como los eventos se crean en el calendario de los usuarios pero el cambio notificado corresponde al evento en el calendario del recurso, debemos intentar buscar por el iCalUId para <strong>discernir si es un evento creado desde Bookker o una nueva creación</strong> que debemos procesar y registrar.</p>
+  </li>
+  <li>
+    <p>a) En caso de ser una notificación de un <strong>evento creado desde Bookker</strong> (se ha encontrado una coincidencia en Bookker con el iCalUId) <strong>se para el procesamiento de la notificación</strong>.</p>
+  </li>
+  <li>b) En caso de que la creación del evento se haya realizado desde Outlook, <strong>se comprueba si es un evento serie o una única instancia</strong>. Si es un evento serie se procede a recuperar todas sus instancias para procesarlas como una lista de eventos.</li>
+  <li><strong>Los eventos son procesados por Bookker</strong>, comprobando las restricciones y el acceso del usuario.</li>
+  <li>
+    <p>a) <strong>Si se cumplen todas las condiciones</strong> para la realización de la reserva, <strong>se procede a almacenar el evento</strong>, como una reserva mas, <strong>y notificar a los usuarios</strong> a través de Bookker.</p>
+  </li>
+  <li>b) En caso de que <strong>no se pueda realizar la reserva se declina el evento en Outlook</strong>. Este último proceso generará una nueva notificación push de actualización de Outlook hacia Bookker.</li>
+</ol>
+
+<h5 id="actualización-de-evento">Actualización de evento</h5>
+
+<ol>
+  <li>Se <strong>recupera el evento en el calendario del recurso en Outlook</strong>.</li>
+  <li><strong>Recuperamos la información de las reservas</strong> en Bookker.</li>
+  <li>
+    <p><strong>Comprobamos que la información que se ha modificado sea modificable</strong> en Bookker.</p>
+  </li>
+  <li>
+    <p>a) <strong>Si se puede realizar la actualización</strong> del evento <strong>se almacenan los cambios</strong> en Bookker.</p>
+  </li>
+  <li>b) <strong>En caso contrario, se actualiza el evento en Outlook</strong> (lo que crea otra notificación posterior de actualización) <strong>volviendo a dejar los datos como estaban anteriormente</strong>.</li>
+</ol>
+
+<h5 id="eliminación-de-evento">Eliminación de evento</h5>
+
+<ol>
+  <li>Intenta eliminar la reserva con el identificador externo recibido en la notificación.</li>
+</ol>
+
+<h4 id="problemas-encontrados-en-la-sincronización">Problemas encontrados en la sincronización</h4>
+
+<ul>
+  <li>Los eventos tienen diferentes identificadores según el calendario en el que se miren.
+    <ul>
+      <li>Identificador del evento en el calendario del usuario.</li>
+      <li>Identificador del evento en el calendario del recurso.</li>
+      <li>iCalUId identificador compartido entre todos los calendarios.</li>
+    </ul>
+  </li>
+  <li>El sistema de Webhook de MS Graph es inconsistente, es decir, el tiempo que tarda en notificar los cambios en los calendarios es variable en un rango desde unos pocos segundos hasta varios minutos. Incluso se han detectado ocasiones en las que no se ha notificado de los cambios.</li>
+  <li>Perdida de información entre el modelo de Reserva (Bookker) y de Evento (Outlook).
+    <ul>
+      <li>Incompatibilidad de los eventos serie.</li>
+      <li>…</li>
+    </ul>
+  </li>
+  <li>El procesamiento de las notificaciones. Cualquier acción que realizamos desde Bookker tiene como consecuencia una o varias notificaciones de Outlook, con lo que el procesamiento de las notificaciones se hace pesado (discernir si hay que procesar la notificación o no).</li>
+</ul>
+
+<h3 id="tecnologías-utilizadas">Tecnologías utilizadas</h3>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/es-es/graph/api/overview?view=graph-rest-1.0">MS Graph REST API</a></li>
+</ul>
+
+<h2 id="bookker-v3">Bookker v3</h2>
+
+<h3 id="mejoras-en-la-sincronización">Mejoras en la sincronización</h3>
+
+<p>Para mejorar la sincronización con MS Outlook, se pretenden llevar a cabo cambios que permitan, de una forma sencilla, evitar la perdida de información al almacenar los eventos en Bookker y dar un sistema más robusto a la hora de consultar la información.</p>
+
+<p>Principales cambios con respecto a Bookker v2:</p>
+
+<ul>
+  <li>Ya no se intentará convertir los eventos de Outlook en reservas de Bookker. Se almacenarán con toda la información, evitando perdida de datos al realizar conversiones.</li>
+  <li>Haciendo uso de las <a href="https://docs.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0">OpenTypeExtensions</a> de MS Graph se añadirá información relevante de Bookker a los eventos de Outlook.</li>
+  <li>Las aplicaciones móviles deberán implementar formularios de creación de reservas acordes con la nueva información que añade MS Outlook en sus eventos.</li>
+</ul>
+
+<h3 id="problemas-encontrados-en-la-sincronziación">Problemas encontrados en la sincronziación</h3>
+
+<p>Con estos cambios podemos gestionar de forma más sencilla la información de los eventos evitando alguno de los problemas de la versión anterior:</p>
+
+<ul>
+  <li>
+    <p>Los eventos tienen diferentes identificadores según el calendario en el que se miren.</p>
+
+    <ul>
+      <li>Identificador del evento en el calendario del usuario.</li>
+      <li>Identificador del evento en el calendario del recurso.</li>
+      <li>iCalUId identificador compartido entre todos los calendarios.</li>
+    </ul>
+
+    <p><strong>[SOLUCIONADO]</strong>: Ahora podemos almacenar de forma sencilla todas las referencias de los identificadores junto con toda la información del evento, además de tener la posibilidad de añadir el identificador del evento en el calendario del usuario y del recurso como información extra con los OpenTypeExtensions.</p>
+  </li>
+  <li>
+    <p>El sistema de Webhook de MS Graph es inconsistente, es decir, el tiempo que tarda en notificar los cambios en los calendarios es variable en un rango desde unos pocos segundos hasta varios minutos. Incluso se han detectado ocasiones en las que no se ha notificado de los cambios.</p>
+  </li>
+  <li>
+    <p>Perdida de información entre el modelo de Reserva (Bookker) y de Evento (Outlook). <strong>[SOLUCIONADO]</strong></p>
+
+    <ul>
+      <li>Incompatibilidad de los eventos serie.</li>
+      <li>…</li>
+    </ul>
+
+    <p><strong>[SOLUCIONADO]</strong>: Ahora se almacena toda la información de los eventos, con lo que no existe perdida de información en las conversiones.</p>
+  </li>
+  <li>
+    <p>El procesamiento de las notificaciones. Cualquier acción que realizamos desde Bookker tiene como consecuencia una o varias notificaciones de Outlook, con lo que el procesamiento de las notificaciones se hace pesado (discernir si hay que procesar la notificación o no).</p>
+  </li>
+</ul>
+
+<p><strong>[SOLUCIONADO]</strong>: Al almacenar toda la información de los eventos disponemos de valores de control de versión como <strong>changeKey</strong>, <strong>createdDateTime</strong> y <strong>lastModifiedDateTime</strong>.</p>
+
+<h3 id="tecnologías-utilizadas-1">Tecnologías utilizadas</h3>
+
+<ul>
+  <li>Se hará uso de la librería de autenticación de microsoft llamada <a href="https://github.com/AzureAD/microsoft-authentication-library-for-java">MS ADAL</a>.</li>
+  <li>Se hará uso del <a href="https://github.com/microsoftgraph/msgraph-sdk-java">SDK de MS Graph</a> para Java.</li>
+</ul>
+</div>
+            <div style="clear:both;">
+              <p class="text-center">
+                <br />
+                <a target="_blank" href="https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages/_docs/Sincronización con Microsoft Outlook.md" class="btn btn-default githubEditButton" role="button">
+                  <i class="fa fa-pencil fa-lg"></i> Improve this page
+                </a>
+              </p>
+            </div>
+            <hr>
+            
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/jekyll-doc-theme/docs/sincronizacion-google-calendar/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/jekyll-doc-theme/docs/dispositivos-del-usuario/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+      </ul>
+    <div class="clear"></div>
+    
+
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            Jekyll Doc Theme 2019 |
+            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = '/jekyll-doc-theme'
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/jekyll-doc-theme/js/bootstrap.min.js "></script>
+<script src="/jekyll-doc-theme/js/typeahead.bundle.min.js "></script>
+
+<script src="/jekyll-doc-theme/js/main.js "></script>
+
+</body>
+
+</html>

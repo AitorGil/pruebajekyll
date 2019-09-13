@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/jekyll-doc-theme/css/main.css">
+    <link rel="stylesheet" href="/jekyll-doc-theme/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/jekyll-doc-theme/favicon.ico?1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Códigos de error y causas | Jekyll Doc Theme</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Códigos de error y causas" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fecha de creación: 05/09/2019" />
+<meta property="og:description" content="Fecha de creación: 05/09/2019" />
+<link rel="canonical" href="http://localhost:4000/jekyll-doc-theme/docs/errores/" />
+<meta property="og:url" content="http://localhost:4000/jekyll-doc-theme/docs/errores/" />
+<meta property="og:site_name" content="Jekyll Doc Theme" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-13T11:44:35+02:00" />
+<script type="application/ld+json">
+{"description":"Fecha de creación: 05/09/2019","@type":"WebPage","url":"http://localhost:4000/jekyll-doc-theme/docs/errores/","headline":"Códigos de error y causas","dateModified":"2019-09-13T11:44:35+02:00","datePublished":"2019-09-13T11:44:35+02:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="canonical" href="http://localhost:4000/jekyll-doc-theme/docs/errores/">
+    <link rel="alternate" type="application/rss+xml" title="Jekyll Doc Theme" href="http://localhost:4000/jekyll-doc-theme/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="/jekyll-doc-theme/">
+                <span><img src="/jekyll-doc-theme/img/logonav.png" alt="Logo"></span> Jekyll Doc Theme
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/jekyll-doc-theme/docs/home/">Docs</a></li>
+                <li ><a href="/jekyll-doc-theme/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li>
+            </ul>
+            <div class="navbar-right">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="search" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/aksakalli/jekyll-doc-theme"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+            Getting Started
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-1" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/home/">Welcome</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+            Autenticación
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-2" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/autenticacion-autorizacion/">Módulo de autenticación y autorización</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+            Usuarios
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-3" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/actualizar-perfil-de-usuario/">Actualizar perfil de Usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-contactos-usuario/">Recuperar contactos del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/busqueda-empleado/">Módulo de búsqueda de empleado</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/perfil-usuario/">Perfil del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recursos-usuario/">Recuperar recursos del usuario</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/restablecer-contrasena/">Restablecer contraseña</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+            Reservas
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-4" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/asignar-reserva-supervisada/">Asignar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cambio-de-estado-de-asistencia/">Cambio de estado de asistencia</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-instancia-reserva-supervisada/">Cancelar instancia de una reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-reserva-supervisada/">Cancelar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/cancelar-reserva/">Cancelar reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/check-in-reserva/">Check-In reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/check-out-reserva/">Check-Out reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/creacion-reserva-supervisada/">Creación de reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/creacion-reserva/">Creación de reservas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/edicion-reserva/">Edición de reservas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/edicion-reserva-supervisada/">Editar reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-asistentes/">Lista de asistentes de una reserva</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/razones-cancelacion/">Recuperar razones de cancelación</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-reservas-supervisadas/">Recuperar reservas supervisadas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/crear-reserva-supervisada/">Crear reserva supervisada</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/recuperar-reservas-usuario/">Recuperar reservas del usuario</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+            Recursos
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-5" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/disponibilidad-recursos/">Disponibilidad de los recursos</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+            Organizaciones
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-6" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/modulos-organizacion/">Recuperar módulos de la organización</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+            Sincronización Externa
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-7" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/sincronizacion-google-calendar/">Sincronización externa con Google Calendar</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/sincronizacion-microsoft-outlook/">Sincronización con Microsoft Outlook</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+            Notificaciones
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse collapse" id="collapse-8" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/dispositivos-del-usuario/">Dispositivos del usuario</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+            Otros
+          </a>
+        </h4>
+      </div>
+      
+      
+      <div class="panel-collapse" id="collapse-9" role="tabpanel" aria-label="Side Navigation">
+        <div class="list-group">
+          
+            
+            
+            <a class="list-group-item active" href="/jekyll-doc-theme/docs/errores/">Códigos de error y causas</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/codigos-error/">Lista de códigos de error</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/integracion-modulo-core/">Integración con el módulo del Core</a>
+          
+            
+            
+            <a class="list-group-item " href="/jekyll-doc-theme/docs/modulo-de-log/">Módulo de Logging</a>
+          
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+        </div>
+
+        <div class="col-md-8">
+            <h1>Códigos de error y causas</h1>
+            <div id="markdown-content-container"><p><strong>Fecha de creación:</strong> 05/09/2019</p>
+
+<p><strong>Fecha de última modificación:</strong> 09/09/2019</p>
+
+<p>[TOC]</p>
+
+<h3 id="auth">Auth</h3>
+
+<h4 id="refresh-authorization">Refresh Authorization</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>ROLE_NOT_FOUND</td>
+      <td>No se ha encontrado el rol móvil del usuario</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="users">Users</h3>
+
+<h4 id="obtener-usuario">Obtener usuario</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>ROLE_NOT_FOUND</td>
+      <td>No se ha encontrado el rol móvil del usuario</td>
+    </tr>
+    <tr>
+      <td>ORGANIZATION_NOT_FOUND</td>
+      <td>No se ha encontrado la organización del usuario</td>
+    </tr>
+    <tr>
+      <td>DEPARTMENT_NOT_FOUND</td>
+      <td>No se ha encontrado el departamento del usuario</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="obtener-recursos-del-usuario">Obtener recursos del usuario</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="obtener-contactos-del-usuario">Obtener contactos del usuario</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="añadir-contacto-a-favoritos">Añadir contacto a favoritos</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>CONTACT_NOT_FOUND</td>
+      <td>No se encuentra al contacto que se quiere añadir a favoritos</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="eliminar-contacto-de-favoritos">Eliminar contacto de favoritos</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>CONTACT_NOT_FOUND</td>
+      <td>No se encuentra al contacto que se quiere eliminar de favoritos</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="buscar-empleado">Buscar empleado</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>MODULE_IS_NOT_ACTIVE</td>
+      <td>El módulo de búsqueda de empleado no está activado</td>
+    </tr>
+    <tr>
+      <td>USER_CANT_BE_SEARCHED</td>
+      <td>El usuario no puede ser buscado</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="actualizar-perfil-del-usuario">Actualizar perfil del usuario</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="bookings">Bookings</h3>
+
+<h4 id="crear-reserva-de-puesto">Crear reserva de puesto</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>El JSON enviado en la petición es inválido</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_ACTIVATED</td>
+      <td>El recurso no está activado</td>
+    </tr>
+    <tr>
+      <td>USER_RULE_NOT_FOUND</td>
+      <td>Regla de usuario no encontrada</td>
+    </tr>
+    <tr>
+      <td>WORKSTATION_NOT_FOUND</td>
+      <td>Puesto no encontrado</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_RULE_NOT_FOUND</td>
+      <td>Regla de recurso no encontrada</td>
+    </tr>
+    <tr>
+      <td>INVALID_BOOKING_DATE</td>
+      <td>La fecha de inicio o fin es inválida</td>
+    </tr>
+    <tr>
+      <td>INVALID_ADVANCE_DAYS</td>
+      <td>Se ha intentado reservar con una antelación superior a la establecida en la regla del recurso</td>
+    </tr>
+    <tr>
+      <td>INVALID_DURATION</td>
+      <td>Duración invalida, es mayor que la permitida por la regla del recurso o es menor de 15 minutos</td>
+    </tr>
+    <tr>
+      <td>INVALID_RESOURCE_SCHEDULE</td>
+      <td>La fecha de inicio o fin está fuera de la fecha de inicio o fin de la regla del recurso.</td>
+    </tr>
+    <tr>
+      <td>INVALID_USER_WORKING_DAY</td>
+      <td>La duración supera el límite de la jornada del usuario</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_GROUP_NOT_FOUND</td>
+      <td>No se ha encontrado el grupo del recurso</td>
+    </tr>
+    <tr>
+      <td>USER_GROUP_NOT_FOUND</td>
+      <td>El usuario no tiene acceso al recurso</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_ALREADY_HAS_BOOKING</td>
+      <td>El recurso ya tiene una reserva</td>
+    </tr>
+    <tr>
+      <td>USER_ALREADY_HAS_BOOKING</td>
+      <td>El usuario ya tiene una reserva</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="crear-reserva-de-espacio">Crear reserva de espacio</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>El JSON enviado en la petición es inválido</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_ACTIVATED</td>
+      <td>El recurso no está activado</td>
+    </tr>
+    <tr>
+      <td>USER_RULE_NOT_FOUND</td>
+      <td>Regla de usuario no encontrada</td>
+    </tr>
+    <tr>
+      <td>SPACE_NOT_FOUND</td>
+      <td>Espacio no encontrado</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_RULE_NOT_FOUND</td>
+      <td>Regla de recurso no encontrada</td>
+    </tr>
+    <tr>
+      <td>INVALID_BOOKING_DATE</td>
+      <td>La fecha de inicio o fin es inválida</td>
+    </tr>
+    <tr>
+      <td>INVALID_ADVANCE_DAYS</td>
+      <td>Se ha intentado reservar con una antelación superior a la establecida en la regla del recurso</td>
+    </tr>
+    <tr>
+      <td>INVALID_DURATION</td>
+      <td>Duración invalida, es mayor que la permitida por la regla del recurso o es menor de 15 minutos</td>
+    </tr>
+    <tr>
+      <td>INVALID_RESOURCE_SCHEDULE</td>
+      <td>La fecha de inicio o fin está fuera de la fecha de inicio o fin de la regla del recurso.</td>
+    </tr>
+    <tr>
+      <td>INVALID_USER_WORKING_DAY</td>
+      <td>La duración supera el límite de la jornada del usuario</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_GROUP_NOT_FOUND</td>
+      <td>No se ha encontrado el grupo del recurso</td>
+    </tr>
+    <tr>
+      <td>USER_GROUP_NOT_FOUND</td>
+      <td>El usuario no tiene acceso al recurso</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_ALREADY_HAS_BOOKING</td>
+      <td>El recurso ya tiene una reserva</td>
+    </tr>
+    <tr>
+      <td>USER_ALREADY_HAS_BOOKING</td>
+      <td>El usuario ya tiene una reserva</td>
+    </tr>
+    <tr>
+      <td>RECURRENCE_NOT_ALLOWED</td>
+      <td>(Sólo aparece si la sincronización externa está activada) Recurrencia no permitida.</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_HAS_NO_EMAIL</td>
+      <td>(Sólo aparece si la sincronización externa está activada) El recurso no tiene un email de sincronización externa.</td>
+    </tr>
+    <tr>
+      <td>CREATE_EVENT_ERROR</td>
+      <td>(Sólo aparece si la sincronización externa está activada) Ha ocurrido un error al crear la reserva en el calendario de Outlook / Google.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="crear-reserva-de-puesto-por-la-cámara">Crear reserva de puesto por la cámara</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>PRESENCE_VALIDATION_REQUIRED</td>
+      <td>Validación de presencia necesaria</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_FOUND</td>
+      <td>Recurso no encontrado</td>
+    </tr>
+    <tr>
+      <td>WRONG_PRESENCE_VALIDATION</td>
+      <td>Se ha enviado una clave de validación incorrecta</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>El JSON enviado en la petición es inválido</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_ACTIVATED</td>
+      <td>El recurso no está activado</td>
+    </tr>
+    <tr>
+      <td>USER_RULE_NOT_FOUND</td>
+      <td>Regla de usuario no encontrada</td>
+    </tr>
+    <tr>
+      <td>WORKSTATION_NOT_FOUND</td>
+      <td>Puesto no encontrado</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_RULE_NOT_FOUND</td>
+      <td>Regla de recurso no encontrada</td>
+    </tr>
+    <tr>
+      <td>INVALID_BOOKING_DATE</td>
+      <td>La fecha de inicio o fin es inválida</td>
+    </tr>
+    <tr>
+      <td>INVALID_ADVANCE_DAYS</td>
+      <td>Se ha intentado reservar con una antelación superior a la establecida en la regla del recurso</td>
+    </tr>
+    <tr>
+      <td>INVALID_DURATION</td>
+      <td>Duración invalida, es mayor que la permitida por la regla del recurso o es menor de 15 minutos</td>
+    </tr>
+    <tr>
+      <td>INVALID_RESOURCE_SCHEDULE</td>
+      <td>La fecha de inicio o fin está fuera de la fecha de inicio o fin de la regla del recurso.</td>
+    </tr>
+    <tr>
+      <td>INVALID_USER_WORKING_DAY</td>
+      <td>La duración supera el límite de la jornada del usuario</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_GROUP_NOT_FOUND</td>
+      <td>No se ha encontrado el grupo del recurso</td>
+    </tr>
+    <tr>
+      <td>USER_GROUP_NOT_FOUND</td>
+      <td>El usuario no tiene acceso al recurso</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_ALREADY_HAS_BOOKING</td>
+      <td>El recurso ya tiene una reserva</td>
+    </tr>
+    <tr>
+      <td>USER_ALREADY_HAS_BOOKING</td>
+      <td>El usuario ya tiene una reserva</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="crear-reserva-de-espacio-por-la-cámara">Crear reserva de espacio por la cámara</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>PRESENCE_VALIDATION_REQUIRED</td>
+      <td>Validación de presencia necesaria</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_FOUND</td>
+      <td>Recurso no encontrado</td>
+    </tr>
+    <tr>
+      <td>WRONG_PRESENCE_VALIDATION</td>
+      <td>Se ha enviado una clave de validación incorrecta</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>El JSON enviado en la petición es inválido</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_ACTIVATED</td>
+      <td>El recurso no está activado</td>
+    </tr>
+    <tr>
+      <td>USER_RULE_NOT_FOUND</td>
+      <td>Regla de usuario no encontrada</td>
+    </tr>
+    <tr>
+      <td>SPACE_NOT_FOUND</td>
+      <td>Espacio no encontrado</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_RULE_NOT_FOUND</td>
+      <td>Regla de recurso no encontrada</td>
+    </tr>
+    <tr>
+      <td>INVALID_BOOKING_DATE</td>
+      <td>La fecha de inicio o fin es inválida</td>
+    </tr>
+    <tr>
+      <td>INVALID_ADVANCE_DAYS</td>
+      <td>Se ha intentado reservar con una antelación superior a la establecida en la regla del recurso</td>
+    </tr>
+    <tr>
+      <td>INVALID_DURATION</td>
+      <td>Duración invalida, es mayor que la permitida por la regla del recurso o es menor de 15 minutos</td>
+    </tr>
+    <tr>
+      <td>INVALID_RESOURCE_SCHEDULE</td>
+      <td>La fecha de inicio o fin está fuera de la fecha de inicio o fin de la regla del recurso.</td>
+    </tr>
+    <tr>
+      <td>INVALID_USER_WORKING_DAY</td>
+      <td>La duración supera el límite de la jornada del usuario</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_GROUP_NOT_FOUND</td>
+      <td>No se ha encontrado el grupo del recurso</td>
+    </tr>
+    <tr>
+      <td>USER_GROUP_NOT_FOUND</td>
+      <td>El usuario no tiene acceso al recurso</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_ALREADY_HAS_BOOKING</td>
+      <td>El recurso ya tiene una reserva</td>
+    </tr>
+    <tr>
+      <td>USER_ALREADY_HAS_BOOKING</td>
+      <td>El usuario ya tiene una reserva</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_HAS_NO_EMAIL</td>
+      <td>(Sólo aparece si la sincronización externa está activada) El recurso no tiene un email de sincronización externa.</td>
+    </tr>
+    <tr>
+      <td>CREATE_EVENT_ERROR</td>
+      <td>(Sólo aparece si la sincronización externa está activada) Ha ocurrido un error al crear la reserva en el calendario de Outlook / Google.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="crear-reserva-de-puesto-1-click">Crear reserva de puesto 1 click</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>El JSON enviado en la petición es inválido. Puede ocurrir si no se envía un ID de subcategoría o de edificio</td>
+    </tr>
+    <tr>
+      <td>BUILDING_NOT_FOUND</td>
+      <td>Edificio no encontrado</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_RULE_NOT_FOUND</td>
+      <td>Regla de recurso no encontrada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recuperar-reservas-del-usuario">Recuperar reservas del usuario</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_RULE_NOT_FOUND</td>
+      <td>Regla de recurso no encontrada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="check-in">Check-in</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+    <tr>
+      <td>PRESENCE_VALIDATION_REQUIRED</td>
+      <td>Validación de presencia necesaria</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_FOUND</td>
+      <td>Recurso no encontrado</td>
+    </tr>
+    <tr>
+      <td>WRONG_PRESENCE_VALIDATION</td>
+      <td>Se ha enviado una clave de validación incorrecta</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>Es una reserva supervisada y el usuario intentando hacer check-in no es ni el supervisor ni el organizador</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_SUPERVISOR_OR_ORGANIZER</td>
+      <td>El usuario no es el organizador de la reserva y el control de acceso de ésta es ORGANIZER (Sólo el organizador puede hacer check-in)</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_ATTENDEE</td>
+      <td>Es una reserva de espacio en la que los asistentes pueden hacer check-in, pero el usuario intentándolo no lo es</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_HAS_NO_RULES</td>
+      <td>El recurso no tiene regla</td>
+    </tr>
+    <tr>
+      <td>CHECK_IN_NOT_ACTIVE_YET</td>
+      <td>Es demasiado pronto para hacer check-in</td>
+    </tr>
+    <tr>
+      <td>CHECK_IN_EXPIRED</td>
+      <td>Es demasiado tarde para hacer check-in</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="check-out">Check-out</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_SUPERVISOR_OR_ORGANIZER</td>
+      <td>Es una reserva supervisada y el usuario intentando hacer check-in no es ni el supervisor ni el organizador</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_ORGANIZER</td>
+      <td>El usuario no es el organizador de la reserva y el control de acceso de ésta es ORGANIZER (Sólo el organizador puede hacer check-in)</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_ATTENDEE</td>
+      <td>Es una reserva de espacio en la que los asistentes pueden hacer check-in, pero el usuario intentándolo no lo es</td>
+    </tr>
+    <tr>
+      <td>CHECK_IN_IS_NULL</td>
+      <td>La reserva no es OPTIONAL por lo que es necesario que exista un check-in</td>
+    </tr>
+    <tr>
+      <td>BOOKING_IS_NOT_CONFIRMED</td>
+      <td>La reserva no es OPTIONAL y no está confirmada (no se ha realizado el check-in), no se puede hacer check-out</td>
+    </tr>
+    <tr>
+      <td>CHECK_OUT_UNAVAILABLE</td>
+      <td>La reserva ya ha acabado, no se puede hacer check-out</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_FOUND</td>
+      <td>Recurso de la reserva no encontrado</td>
+    </tr>
+    <tr>
+      <td>CANCEL_EVENT_ERROR</td>
+      <td>(Sólo si la sincronización externa está activada) Ha ocurrido un error al hacer check-out (cancelar) la reserva en el calendario de Google / Outlook</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cancelar-reserva">Cancelar reserva</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada, puede ocurrir si no se ha encontrado la reserva o si se ha encontrado pero ya ha acabado</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_ORGANIZER</td>
+      <td>El usuario que intenta cancelar la reserva no es el organizador de ésta</td>
+    </tr>
+    <tr>
+      <td>CANCELLATION_REASON_NOT_FOUND</td>
+      <td>Razón de cancelación no encontrada</td>
+    </tr>
+    <tr>
+      <td>CANCEL_EVENT_ERROR</td>
+      <td>(Sólo si la sincronización externa está activada) Ha ocurrido un error al cancelar la reserva en el calendario de Google / Outlook</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cancelar-reserva-recurrente">Cancelar reserva recurrente</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_ORGANIZER</td>
+      <td>El usuario que intenta cancelar la reserva no es el organizador de ésta</td>
+    </tr>
+    <tr>
+      <td>CANCELLATION_REASON_NOT_FOUND</td>
+      <td>Razón de cancelación no encontrada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="editar-reserva-de-puesto">Editar reserva de puesto</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+    <tr>
+      <td>BOOKING_CAN_NOT_BE_MODIFIED</td>
+      <td>La reserva no puede ser modificada, puede ocurrir si la reserva está expirada, cancelada o confirmada, o si ya ha acabado</td>
+    </tr>
+    <tr>
+      <td>START_DATE_CAN_NOT_BE_MODIFIED</td>
+      <td>La hora de inicio solo se puede modificar si el estado de la reserva es PENDING o PENDING_APPROVAL</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Al editar una reserva de puesto se usa el método para crear una reserva de puesto, por lo que pueden ocurrir los mismos errores.</li>
+</ul>
+
+<h4 id="editar-reserva-de-espacio-put">Editar reserva de espacio (PUT)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+    <tr>
+      <td>BOOKING_CAN_NOT_BE_MODIFIED</td>
+      <td>La reserva no puede ser modificada, puede ocurrir si la reserva está expirada, cancelada o confirmada, o si ya ha acabado</td>
+    </tr>
+    <tr>
+      <td>START_DATE_CAN_NOT_BE_MODIFIED</td>
+      <td>La hora de inicio solo se puede modificar si el estado de la reserva es PENDING o PENDING_APPROVAL</td>
+    </tr>
+    <tr>
+      <td>CANCEL_EVENT_ERROR</td>
+      <td>(Sólo si la sincronización externa está activada) Ha ocurrido un error al cancelar la reserva en el calendario de Google / Outlook</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Al editar una reserva de espacio se usa el método para crear una reserva de espacio, por lo que pueden ocurrir los mismos errores.</li>
+</ul>
+
+<h4 id="editar-reserva-de-espacio-patch">Editar reserva de espacio (PATCH)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+    <tr>
+      <td>BOOKING_CAN_NOT_BE_MODIFIED</td>
+      <td>La reserva no puede ser modificada, puede ocurrir si la reserva está expirada, cancelada o confirmada, o si ya ha acabado</td>
+    </tr>
+    <tr>
+      <td>START_DATE_CAN_NOT_BE_MODIFIED</td>
+      <td>La hora de inicio solo se puede modificar si el estado de la reserva es PENDING o PENDING_APPROVAL</td>
+    </tr>
+    <tr>
+      <td>PATCH_EVENT_ERROR</td>
+      <td>(Sólo si la sincronización externa está activada) Ha ocurrido un error al actualizar la reserva en el calendario de Google / Outlook</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="obtener-asistentes-de-una-reserva">Obtener asistentes de una reserva</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización / El usuario intentando obtener los asistentes de la reserva no es ni el organizador ni asistente</td>
+    </tr>
+    <tr>
+      <td>BOOKING_IS_NOT_SPACE</td>
+      <td>La reserva no es un espacio</td>
+    </tr>
+    <tr>
+      <td>ATTENDEE_NOT_FOUND</td>
+      <td>Asistente no encontrado</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="editar-estado-de-asistente">Editar estado de asistente</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>ATTENDEE_NOT_FOUND</td>
+      <td>Asistente no encontrado</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_ATTENDEE</td>
+      <td>El usuario al que se está intentado editar el estado no es asistente de la reserva</td>
+    </tr>
+    <tr>
+      <td>ATTENDEE_ALREADY_DECLINED</td>
+      <td>El asistente ya ha rechazado, no se puede editar su estado</td>
+    </tr>
+    <tr>
+      <td>ATTENDEE_DOESNT_NEED_ACTION</td>
+      <td>Si el asistente ya no necesita responder a la invitación, no se puede volver a poner ese estado</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="crear-reserva-supervisada">Crear reserva supervisada</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización / El usuario no tiene acceso a alguno de los recursos enviados</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>El JSON enviado en la petición es inválido, ocurre si la lista de recursos está vacía o directamente no se ha mandado</td>
+    </tr>
+    <tr>
+      <td>SUPERVISED_BOOKING_CONFIG_NOT_FOUND</td>
+      <td>Configuración de las reservas supervisadas no encontrada</td>
+    </tr>
+    <tr>
+      <td>MAX_USERS_SURPASSED</td>
+      <td>Se ha superado la cantidad de recursos a reservar simultáneamente</td>
+    </tr>
+    <tr>
+      <td>ROLE_NOT_FOUND</td>
+      <td>El usuario no tiene rol móvil</td>
+    </tr>
+    <tr>
+      <td>USER_ROLE_NOT_AUTHORIZED</td>
+      <td>El usuario intentando hacer la reserva no tiene el rol de gestor de equipos</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_CAN_NOT_BE_DUPLICATED</td>
+      <td>Se han enviado IDs de recursos duplicados</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_NOT_FOUND</td>
+      <td>Recurso no encontrado</td>
+    </tr>
+    <tr>
+      <td>RESOURCES_MUST_BE_IN_SAME_FLOOR</td>
+      <td>Los recursos deben de estar en la misma planta</td>
+    </tr>
+    <tr>
+      <td>INVALID_BOOKING_DATE</td>
+      <td>La fecha de inicio o de fin no pueden ser anteriores a la actual</td>
+    </tr>
+    <tr>
+      <td>INVALID_DURATION</td>
+      <td>La duración no puede ser menor a 15 minutos</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_IS_NOT_WORKSTATION</td>
+      <td>El recurso no es un puesto</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_ALREADY_HAS_BOOKING</td>
+      <td>El recurso ya está reservado</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="asignar-reserva-supervisada">Asignar reserva supervisada</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>El JSON enviado en la petición es inválido</td>
+    </tr>
+    <tr>
+      <td>ROLE_NOT_FOUND</td>
+      <td>El usuario no tiene rol móvil</td>
+    </tr>
+    <tr>
+      <td>USER_ROLE_NOT_AUTHORIZED</td>
+      <td>El usuario intentando hacer la reserva no tiene el rol de gestor de equipos</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_RULE_NOT_FOUND</td>
+      <td>Regla de recurso no encontrada</td>
+    </tr>
+    <tr>
+      <td>SUPERVISED_BOOKING_NOT_FOUND</td>
+      <td>No se ha encontrado la reserva supervisada</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_SUPERVISOR</td>
+      <td>El usuario que hace la petición no es el supervisor de la reserva</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+    <tr>
+      <td>EMAIL_CAN_NOT_BE_DUPLICATED</td>
+      <td>Se han enviado emails duplicados</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_CAN_NOT_BE_DUPLICATED</td>
+      <td>Se han enviado IDs de recursos duplicados</td>
+    </tr>
+    <tr>
+      <td>BOOKING_IS_ALREADY_ASSIGNED</td>
+      <td>La reserva ya está asignada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="editar-reserva-supervisada">Editar reserva supervisada</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>El JSON enviado en la petición es inválido</td>
+    </tr>
+    <tr>
+      <td>ROLE_NOT_FOUND</td>
+      <td>El usuario no tiene rol móvil</td>
+    </tr>
+    <tr>
+      <td>USER_ROLE_NOT_AUTHORIZED</td>
+      <td>El usuario intentando hacer la reserva no tiene el rol de gestor de equipos</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_RULE_NOT_FOUND</td>
+      <td>Regla de recurso no encontrada</td>
+    </tr>
+    <tr>
+      <td>SUPERVISED_BOOKING_NOT_FOUND</td>
+      <td>No se ha encontrado la reserva supervisada</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_SUPERVISOR</td>
+      <td>El usuario que hace la petición no es el supervisor de la reserva</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada</td>
+    </tr>
+    <tr>
+      <td>EMAIL_CAN_NOT_BE_DUPLICATED</td>
+      <td>Se han enviado emails duplicados</td>
+    </tr>
+    <tr>
+      <td>RESOURCE_CAN_NOT_BE_DUPLICATED</td>
+      <td>Se han enviado IDs de recursos duplicados</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recuperar-reservas-supervisadas">Recuperar reservas supervisadas</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>ROLE_NOT_FOUND</td>
+      <td>El usuario no tiene rol móvil</td>
+    </tr>
+    <tr>
+      <td>USER_ROLE_NOT_AUTHORIZED</td>
+      <td>El usuario intentando hacer la reserva no tiene el rol de gestor de equipos</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cancelar-reserva-supervisada">Cancelar reserva supervisada</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>ROLE_NOT_FOUND</td>
+      <td>El usuario no tiene rol móvil</td>
+    </tr>
+    <tr>
+      <td>USER_ROLE_NOT_AUTHORIZED</td>
+      <td>El usuario intentando hacer la reserva no tiene el rol de gestor de equipos</td>
+    </tr>
+    <tr>
+      <td>SUPERVISED_BOOKING_NOT_FOUND</td>
+      <td>No se ha encontrado la reserva supervisada</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_SUPERVISOR</td>
+      <td>El usuario que hace la petición no es el supervisor de la reserva</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada, puede ocurrir si la reserva no existe si está confirmada, expirada, cancelada o ha acabado</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cancelar-instancia-de-reserva-supervisada">Cancelar instancia de reserva supervisada</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>ROLE_NOT_FOUND</td>
+      <td>El usuario no tiene rol móvil</td>
+    </tr>
+    <tr>
+      <td>USER_ROLE_NOT_AUTHORIZED</td>
+      <td>El usuario intentando hacer la reserva no tiene el rol de gestor de equipos</td>
+    </tr>
+    <tr>
+      <td>SUPERVISED_BOOKING_NOT_FOUND</td>
+      <td>No se ha encontrado la reserva supervisada</td>
+    </tr>
+    <tr>
+      <td>USER_IS_NOT_SUPERVISOR</td>
+      <td>El usuario que hace la petición no es el supervisor de la reserva</td>
+    </tr>
+    <tr>
+      <td>BOOKING_NOT_FOUND</td>
+      <td>Reserva no encontrada, puede ocurrir si la reserva no existe si está confirmada, expirada, cancelada, ha acabado o no se ha encontrado con los criterios solicitados</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="recursos">Recursos</h3>
+
+<h4 id="recuperar-puestos-libres">Recuperar puestos libres</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BUILDING_NOT_FOUND</td>
+      <td>Edificio no encontrado</td>
+    </tr>
+    <tr>
+      <td>SUBCATEGORY_NOT_FOUND</td>
+      <td>Subcategoría no encontrada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recuperar-espacios-libres">Recuperar espacios libres</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>BUILDING_NOT_FOUND</td>
+      <td>Edificio no encontrado</td>
+    </tr>
+    <tr>
+      <td>SUBCATEGORY_NOT_FOUND</td>
+      <td>Subcategoría no encontrada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recuperar-módulos-de-la-organización">Recuperar módulos de la organización</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>ORGANIZATION_NOT_FOUND</td>
+      <td>Organización no encontrada</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recuperar-motivos-de-cancelación">Recuperar motivos de cancelación</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="notificaciones">Notificaciones</h3>
+
+<h4 id="registrar-dispositivo-del-usuario">Registrar dispositivo del usuario</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>Petición inválida</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="eliminar-dispositivo-del-usuario">Eliminar dispositivo del usuario</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código de error</th>
+      <th>Causa(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USER_NOT_FOUND</td>
+      <td>No se ha encontrado al usuario que intenta hacer la petición</td>
+    </tr>
+    <tr>
+      <td>USER_HAS_GOT_NOT_ACCESS</td>
+      <td>El usuario que hace la petición no tiene acceso a la organización</td>
+    </tr>
+    <tr>
+      <td>INVALID_JSON</td>
+      <td>Petición inválida</td>
+    </tr>
+    <tr>
+      <td>DEVICE_NOT_FOUND</td>
+      <td>Dispositivo no encontrado</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+            <div style="clear:both;">
+              <p class="text-center">
+                <br />
+                <a target="_blank" href="https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages/_docs/Códigos de error y causas.md" class="btn btn-default githubEditButton" role="button">
+                  <i class="fa fa-pencil fa-lg"></i> Improve this page
+                </a>
+              </p>
+            </div>
+            <hr>
+            
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/jekyll-doc-theme/docs/dispositivos-del-usuario/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/jekyll-doc-theme/docs/codigos-error/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+      </ul>
+    <div class="clear"></div>
+    
+
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            Jekyll Doc Theme 2019 |
+            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = '/jekyll-doc-theme'
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/jekyll-doc-theme/js/bootstrap.min.js "></script>
+<script src="/jekyll-doc-theme/js/typeahead.bundle.min.js "></script>
+
+<script src="/jekyll-doc-theme/js/main.js "></script>
+
+</body>
+
+</html>
