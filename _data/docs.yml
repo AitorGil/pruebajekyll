@@ -1,0 +1,59 @@
+- title: Getting Started
+  docs:
+    - home
+
+- title: Autenticación
+  docs:
+    - autenticacion-autorizacion
+
+- title: Usuarios
+  docs:
+    - actualizar-perfil-de-usuario
+    - recuperar-contactos-usuario
+    - busqueda-empleado
+    - perfil-usuario
+    - recursos-usuario
+    - restablecer-contrasena
+
+- title: Reservas
+  docs:
+    - asignar-reserva-supervisada
+    - cambio-de-estado-de-asistencia
+    - cancelar-instancia-reserva-supervisada
+    - cancelar-reserva-supervisada
+    - cancelar-reserva
+    - check-in-reserva
+    - check-out-reserva
+    - creacion-reserva-supervisada
+    - creacion-reserva
+    - edicion-reserva
+    - edicion-reserva-supervisada
+    - recuperar-asistentes
+    - razones-cancelacion
+    - recuperar-reservas-supervisadas
+    - crear-reserva-supervisada
+    - recuperar-reservas-usuario
+
+- title: Recursos
+  docs:
+    - disponibilidad-recursos
+
+- title: Organizaciones
+  docs:
+    - modulos-organizacion
+
+- title: Sincronización Externa
+  docs:
+    - sincronizacion-google-calendar
+    - sincronizacion-microsoft-outlook
+
+- title: Notificaciones
+  docs:
+    - dispositivos-del-usuario
+
+- title: Otros
+  docs:
+    - errores
+    - codigos-error
+    - integracion-modulo-core
+    - modulo-de-log
